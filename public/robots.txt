@@ -1,0 +1,6 @@
+# Robots.txt for Bes Outkast Society
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://ais-pre-qncbyott7djk2humlvbdfb-305381829689.us-east1.run.app/sitemap.xml
