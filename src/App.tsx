@@ -35,10 +35,33 @@ export default function App() {
     setIsGenerating(prev => ({ ...prev, [section]: false }));
   };
 
+  const handleViewChange = (view: 'home' | 'about') => {
+    setCurrentView(view);
+    if (view === 'about') {
+      window.history.pushState({ view: 'about' }, '', '/about');
+    } else {
+      window.history.pushState({ view: 'home' }, '', '/');
+    }
+  };
+
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     
+    const handlePopState = (event: PopStateEvent) => {
+      if (event.state?.view) {
+        setCurrentView(event.state.view);
+      } else {
+        setCurrentView(window.location.pathname === '/about' ? 'about' : 'home');
+      }
+    };
+    window.addEventListener('popstate', handlePopState);
+    
+    // Check URL for direct navigation to /about
+    if (window.location.pathname === '/about') {
+      setCurrentView('about');
+    }
+
     // Auto-generate images on mount
     handleGenerate('legendary');
     handleGenerate('forge');
@@ -50,6 +73,7 @@ export default function App() {
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('popstate', handlePopState);
       clearTimeout(timer);
     };
   }, []);
@@ -89,7 +113,7 @@ export default function App() {
             
             <div 
               className="flex flex-col items-center cursor-pointer"
-              onClick={() => setCurrentView('home')}
+              onClick={() => handleViewChange('home')}
             >
               <div className="text-2xl sm:text-4xl font-serif tracking-[0.2em] text-ink font-bold uppercase">
                 Bes Outkast Society
@@ -130,7 +154,7 @@ export default function App() {
                   { name: 'The News magazine', url: 'https://besoutkastsociety.substack.com' },
                   { name: 'Columns', url: 'https://besoutkastsociety.substack.com/archive' },
                   { name: 'Private Archive', url: 'https://besoutkastsociety.substack.com/archive?sort=top' },
-                  { name: 'About Society', action: () => { setCurrentView('about'); setIsMenuOpen(false); } },
+                  { name: 'About Society', action: () => { handleViewChange('about'); setIsMenuOpen(false); } },
                   { name: 'Contact', url: 'mailto:tracydwilson@besheanwe.com' }
                 ].map((item, i) => (
                   'url' in item ? (
@@ -601,7 +625,7 @@ export default function App() {
             <div>
               <h4 className="nav-link text-muted mb-6">Society</h4>
               <ul className="space-y-3 text-sm font-display uppercase tracking-widest font-bold">
-                <li><button onClick={() => setCurrentView('about')} className="hover:text-muted transition-colors uppercase">About Society</button></li>
+                <li><button onClick={() => handleViewChange('about')} className="hover:text-muted transition-colors uppercase">About Society</button></li>
                 <li><a href="mailto:tracydwilson@besheanwe.com" className="hover:text-muted transition-colors">Contact</a></li>
                 <li><a href="#" className="hover:text-muted transition-colors">Concierge</a></li>
                 <li><a href="#" className="hover:text-muted transition-colors">Advertising</a></li>
@@ -629,7 +653,7 @@ export default function App() {
       </footer>
     </motion.main>
       ) : (
-        <AboutPage key="about" onBack={() => setCurrentView('home')} />
+        <AboutPage key="about" onBack={() => handleViewChange('home')} />
       )}
     </AnimatePresence>
 
@@ -705,9 +729,9 @@ export default function App() {
                     <section>
                       <h3 className="font-display text-xs uppercase tracking-[0.4em] text-muted mb-6 border-b border-ink/10 pb-2">Main Navigation</h3>
                       <ul className="space-y-4 text-2xl font-serif italic">
-                        <li><button onClick={() => { setCurrentView('home'); setShowSitemap(false); }} className="hover:text-[#888] transition-colors text-left">The News magazine</button></li>
+                        <li><button onClick={() => { handleViewChange('home'); setShowSitemap(false); }} className="hover:text-[#888] transition-colors text-left">The News magazine</button></li>
                         <li><a href="https://besoutkastsociety.substack.com/archive?sort=top" target="_blank" rel="noopener noreferrer" className="hover:text-[#888] transition-colors">Private Archive</a></li>
-                        <li><button onClick={() => { setCurrentView('about'); setShowSitemap(false); }} className="hover:text-[#888] transition-colors text-left">About Society</button></li>
+                        <li><button onClick={() => { handleViewChange('about'); setShowSitemap(false); }} className="hover:text-[#888] transition-colors text-left">About Society</button></li>
                         <li><a href="mailto:tracydwilson@besheanwe.com" className="hover:text-[#888] transition-colors">Contact</a></li>
                       </ul>
                     </section>

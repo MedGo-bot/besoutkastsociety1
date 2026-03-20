@@ -7,6 +7,7 @@ export async function onRequestPost(context) {
     const apiKey = env.GEMINI_API_KEY;
 
     if (!apiKey) {
+      console.error("GEMINI_API_KEY is missing in env");
       return new Response(JSON.stringify({ error: "GEMINI_API_KEY is not set in Cloudflare environment variables." }), {
         status: 500,
         headers: { "Content-Type": "application/json" },
@@ -14,6 +15,7 @@ export async function onRequestPost(context) {
     }
 
     const ai = new GoogleGenAI({ apiKey });
+    console.log("Generating image for prompt:", prompt);
     
     const response = await ai.models.generateContent({
       model: 'gemini-2.5-flash-image',
@@ -28,10 +30,13 @@ export async function onRequestPost(context) {
     });
 
     let imageData = null;
-    for (const part of response.candidates?.[0]?.content?.parts || []) {
-      if (part.inlineData) {
-        imageData = `data:image/png;base64,${part.inlineData.data}`;
-        break;
+    const candidates = response.candidates;
+    if (candidates && candidates.length > 0 && candidates[0].content?.parts) {
+      for (const part of candidates[0].content.parts) {
+        if (part.inlineData) {
+          imageData = `data:image/png;base64,${part.inlineData.data}`;
+          break;
+        }
       }
     }
 

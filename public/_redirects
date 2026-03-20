@@ -1,3 +1,7 @@
+# Static files - serve them directly
+/sitemap /sitemap.xml 200
 /sitemap.xml /sitemap.xml 200
 /robots.txt /robots.txt 200
+
+# SPA Routing - catch all other routes and send to index.html
 /* /index.html 200

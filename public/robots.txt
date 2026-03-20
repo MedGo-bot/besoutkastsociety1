@@ -2,5 +2,5 @@
 User-agent: *
 Allow: /
 
-# Sitemap Location (IMPORTANT: Update this domain to your Cloudflare domain)
-Sitemap: https://ais-pre-qncbyott7djk2humlvbdfb-305381829689.us-east1.run.app/sitemap.xml
+# Sitemap Location
+Sitemap: https://www.besoutkastsociety.com/sitemap.xml
