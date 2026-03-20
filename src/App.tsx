@@ -11,7 +11,7 @@ export default function App() {
   const [currentView, setCurrentView] = useState<'home' | 'about'>('home');
   
   // Image Generation States
-  const [legendaryImage, setLegendaryImage] = useState<string | null>(null);
+  const [legendaryImage, setLegendaryImage] = useState<string | null>('/legendary-rule.jpg');
   const [forgeImage, setForgeImage] = useState<string | null>(null);
   const [isGenerating, setIsGenerating] = useState<{ [key: string]: boolean }>({});
   const [showNewsletter, setShowNewsletter] = useState(false);
@@ -63,7 +63,6 @@ export default function App() {
     }
 
     // Auto-generate images on mount
-    handleGenerate('legendary');
     handleGenerate('forge');
 
     // Newsletter Modal Trigger
@@ -451,14 +450,6 @@ export default function App() {
             <div className="bg-ink text-paper p-12 md:p-24 flex flex-col justify-center border-r border-ink">
               <div className="flex justify-between items-start mb-6">
                 <span className="font-display text-[10px] uppercase tracking-[0.4em] text-muted block">Legacy & Performance</span>
-                <button 
-                  onClick={() => handleGenerate('legendary')}
-                  disabled={isGenerating['legendary']}
-                  className="flex items-center gap-2 text-[10px] font-display uppercase tracking-widest text-paper/40 hover:text-paper transition-colors disabled:opacity-50"
-                >
-                  {isGenerating['legendary'] ? <Loader2 className="w-3 h-3 animate-spin" /> : <Sparkles className="w-3 h-3" />}
-                  {isGenerating['legendary'] ? 'Generating...' : 'Generate with Gemini'}
-                </button>
               </div>
               <a 
                 href={legendaryRule?.url || "https://substack.com/@besoutkastsociety"} 
@@ -471,15 +462,10 @@ export default function App() {
               <div className="aspect-video overflow-hidden mb-8 bg-muted/10 relative">
                 <img 
                   src={legendaryImage || "https://images.unsplash.com/photo-1528629202440-2db0a9695611?auto=format&fit=crop&w=800&q=80"} 
-                  alt="Extreme Sports" 
-                  className={`w-full h-full object-cover grayscale transition-opacity duration-500 ${isGenerating['legendary'] ? 'opacity-50' : 'opacity-100'}`}
+                  alt="Legendary Rule" 
+                  className="w-full h-full object-cover transition-opacity duration-500"
                   referrerPolicy="no-referrer"
                 />
-                {isGenerating['legendary'] && (
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Loader2 className="w-8 h-8 animate-spin text-paper" />
-                  </div>
-                )}
               </div>
               <p className="text-xl font-serif italic text-paper/60 leading-relaxed mb-8">
                 The Standard of Human Performance. A deep dive into the world of extreme sports and the relentless pursuit of excellence.
