@@ -12,7 +12,7 @@ export default function App() {
   
   // Image Generation States
   const [legendaryImage, setLegendaryImage] = useState<string | null>('/legendary-rule.jpg');
-  const [forgeImage, setForgeImage] = useState<string | null>(null);
+  const [forgeImage, setForgeImage] = useState<string | null>('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80');
   const [isGenerating, setIsGenerating] = useState<{ [key: string]: boolean }>({});
   const [showNewsletter, setShowNewsletter] = useState(false);
   const [showSitemap, setShowSitemap] = useState(false);
@@ -31,6 +31,11 @@ export default function App() {
     if (imageUrl) {
       if (section === 'legendary') setLegendaryImage(imageUrl);
       else setForgeImage(imageUrl);
+    } else {
+      // Fallback if generation fails
+      if (section === 'forge') {
+        setForgeImage("https://images.unsplash.com/photo-1534394416940-fa3c29d47de8?auto=format&fit=crop&w=800&q=80");
+      }
     }
     setIsGenerating(prev => ({ ...prev, [section]: false }));
   };
@@ -61,9 +66,6 @@ export default function App() {
     if (window.location.pathname === '/about') {
       setCurrentView('about');
     }
-
-    // Auto-generate images on mount
-    handleGenerate('forge');
 
     // Newsletter Modal Trigger
     const timer = setTimeout(() => {
@@ -465,6 +467,12 @@ export default function App() {
                   alt="Legendary Rule" 
                   className="w-full h-full object-cover transition-opacity duration-500"
                   referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    if (target.src !== "https://images.unsplash.com/photo-1528629202440-2db0a9695611?auto=format&fit=crop&w=800&q=80") {
+                      target.src = "https://images.unsplash.com/photo-1528629202440-2db0a9695611?auto=format&fit=crop&w=800&q=80";
+                    }
+                  }}
                 />
               </div>
               <p className="text-xl font-serif italic text-paper/60 leading-relaxed mb-8">

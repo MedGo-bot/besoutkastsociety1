@@ -3,8 +3,12 @@ import { GoogleGenAI } from "@google/genai";
 export async function onRequestPost(context) {
   try {
     const { request, env } = context;
-    const { prompt } = await request.json();
+    const body = await request.json();
+    const { prompt } = body;
     const apiKey = env.GEMINI_API_KEY;
+
+    console.log("Request received for prompt:", prompt);
+    console.log("API Key present:", !!apiKey);
 
     if (!apiKey) {
       console.error("GEMINI_API_KEY is missing in env");
@@ -23,6 +27,8 @@ export async function onRequestPost(context) {
         parts: [{ text: prompt }],
       },
       config: {
+        systemInstruction: "You are an image generation model. Generate the requested image based on the prompt. Do not provide any text descriptions or explanations.",
+        maxOutputTokens: 2048,
         imageConfig: {
           aspectRatio: "16:9",
         },
