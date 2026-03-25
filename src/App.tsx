@@ -11,7 +11,7 @@ export default function App() {
   const [currentView, setCurrentView] = useState<'home' | 'about'>('home');
   
   // Image Generation States
-  const [legendaryImage, setLegendaryImage] = useState<string | null>('/legendary-rule.jpg');
+  const [legendaryImage, setLegendaryImage] = useState<string | null>('/ledrule.jpg');
   const [forgeImage, setForgeImage] = useState<string | null>('https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=1200&q=80');
   const [isGenerating, setIsGenerating] = useState<{ [key: string]: boolean }>({});
   const [showNewsletter, setShowNewsletter] = useState(false);
@@ -495,14 +495,6 @@ export default function App() {
               <div className="relative z-10">
                 <div className="flex justify-between items-start mb-6">
                   <span className="font-display text-[10px] uppercase tracking-[0.4em] text-muted block">Optimization</span>
-                  <button 
-                    onClick={() => handleGenerate('forge')}
-                    disabled={isGenerating['forge']}
-                    className="flex items-center gap-2 text-[10px] font-display uppercase tracking-widest text-ink/40 hover:text-ink transition-colors disabled:opacity-50"
-                  >
-                    {isGenerating['forge'] ? <Loader2 className="w-3 h-3 animate-spin" /> : <Sparkles className="w-3 h-3" />}
-                    {isGenerating['forge'] ? 'Generating...' : 'Generate with Gemini'}
-                  </button>
                 </div>
                 <a 
                   href={theForge?.url || "https://besoutkastsociety.substack.com/s/the-forge"} 
@@ -516,14 +508,9 @@ export default function App() {
                   <img 
                     src={forgeImage || "https://images.unsplash.com/photo-1534394416940-fa3c29d47de8?auto=format&fit=crop&w=800&q=80"} 
                     alt="Architecture of Self" 
-                    className={`w-full h-full object-cover transition-opacity duration-500 ${isGenerating['forge'] ? 'opacity-50' : 'opacity-100'}`}
+                    className="w-full h-full object-cover transition-opacity duration-500"
                     referrerPolicy="no-referrer"
                   />
-                  {isGenerating['forge'] && (
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <Loader2 className="w-8 h-8 animate-spin text-ink" />
-                    </div>
-                  )}
                 </div>
                 <p className="text-xl font-serif italic text-muted leading-relaxed mb-8">
                   Architecture of the Self. Mind and body optimization for the modern visionary. Building the foundation of greatness.
