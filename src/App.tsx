@@ -85,7 +85,7 @@ export default function App() {
   const fashionWithJuan = COLUMNS.find(c => c.title === "Fashion with Juan");
   const wealthProtocol = COLUMNS.find(c => c.title === "The Wealth Protocol");
   const tacticalAdvantage = COLUMNS.find(c => c.title === "The Tactical Advantage");
-  const innerCircle = COLUMNS.find(c => c.title === "The Inner Circle");
+  const innerSquare = COLUMNS.find(c => c.title === "The Inner Square");
   const whiskeyAngels = COLUMNS.find(c => c.title === "Whiskey with the Angels");
   const legendaryRule = COLUMNS.find(c => c.title === "Legendary Rule");
   const askFred = COLUMNS.find(c => c.url.includes("ask-fred"));
@@ -381,17 +381,17 @@ export default function App() {
                 </div>
 
                 <div>
-                  <span className="font-display text-[10px] uppercase tracking-widest text-muted mb-4 block border-b border-ink/10 pb-2">Department: The Inner Circle</span>
+                  <span className="font-display text-[10px] uppercase tracking-widest text-muted mb-4 block border-b border-ink/10 pb-2">Department: The Inner Square</span>
                   <ul className="space-y-6">
                     <li className="group/sidebar">
                       <a 
-                        href={innerCircle?.url || "https://substack.com/@besoutkastsociety"} 
+                        href={innerSquare?.url || "https://substack.com/@besoutkastsociety"} 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="block no-underline"
                       >
                         <div className="flex items-center justify-between">
-                          <h4 className="font-serif text-lg italic leading-tight group-hover/sidebar:text-[#888] transition-colors duration-300">"The Inner Circle"</h4>
+                          <h4 className="font-serif text-lg italic leading-tight group-hover/sidebar:text-[#888] transition-colors duration-300">"The Inner Square"</h4>
                           <ArrowRight className="w-3 h-3 opacity-0 group-hover/sidebar:opacity-100 group-hover/sidebar:translate-x-1 transition-all duration-300 text-[#888]" />
                         </div>
                         <span className="text-[10px] font-display uppercase tracking-widest text-muted group-hover/sidebar:text-[#888]/60 transition-colors duration-300">with Ms. Wilson</span>
@@ -663,7 +663,7 @@ export default function App() {
 
               <div className="text-center">
                 <h2 className="text-3xl font-serif font-bold tracking-widest uppercase mb-4 text-ink">
-                  The Inner Circle
+                  The Inner Square
                 </h2>
                 <p className="font-display text-[10px] uppercase tracking-[0.2em] text-muted mb-8 leading-relaxed">
                   Weekly intelligence on the dare. <br /> Join the Bes Outkast Society briefing on Substack.

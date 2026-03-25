@@ -86,7 +86,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack }) => {
               {
                 num: "01",
                 title: "Discretion",
-                desc: "We value the private briefing over the public spectacle. Our most potent insights are reserved for the Inner Circle."
+                desc: "We value the private briefing over the public spectacle. Our most potent insights are reserved for the Inner Square."
               },
               {
                 num: "02",
