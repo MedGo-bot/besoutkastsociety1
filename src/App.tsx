@@ -12,7 +12,7 @@ export default function App() {
   
   // Image Generation States
   const [legendaryImage, setLegendaryImage] = useState<string | null>('/legendary-rule.jpg');
-  const [forgeImage, setForgeImage] = useState<string | null>('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80');
+  const [forgeImage, setForgeImage] = useState<string | null>('https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=1200&q=80');
   const [isGenerating, setIsGenerating] = useState<{ [key: string]: boolean }>({});
   const [showNewsletter, setShowNewsletter] = useState(false);
   const [showSitemap, setShowSitemap] = useState(false);
@@ -23,9 +23,10 @@ export default function App() {
       ? `A high-contrast, black-and-white editorial photograph, Vogue-style. A female athlete is captured mid-air on a skateboard performing a technical trick in a brutalist concrete skate park.
          The Gear: She wears Bes Outkast technical apparel: a matte-black, cropped windbreaker made of a high-sheen technical silk with a structured, architectural collar. On the left sleeve, a small, embossed rubberized "B.O.S." logo is visible. Her trousers are high-waisted, utility-style "techwear" joggers with laser-cut ventilation patterns and minimalist cargo pockets. She wears sleek, carbon-fiber reinforced low-profile sneakers.
          Composition: Asymmetrical. The background shows blurred industrial stadium lights, sharp concrete bowls, and skate park geometry. Harsh, cinematic lighting creates deep shadows on the fabric’s texture. Film grain finish. The mood is "High-End Grit."`
-      : `A dramatic photographic portrait of a male subject with a powerful athlete’s physique in a low-lit, industrial training environment.
-         The Gear: He wears a Bes Outkast compression base-layer in deep "Grit Grey" featuring an anatomical "muscle-mapping" design. The fabric has a subtle, honeycomb hex-pattern texture. A vertical, minimalist "BES OUTKAST SOCIETY" wordmark runs in stark white down the center of the chest in a condensed sans-serif font. He wears heavy-duty, matte-black wrist wraps with a subtle red "Dare" tag.
-         Details: A translucent technical blueprint grid is overlaid on his form. The lighting is sharp and singular, catching the sweat on the technical fabric and his skin. The mood is disciplined, elite, and mathematically precise.`;
+      : `A cinematic, high-contrast photographic portrait of a fit blonde woman in a dark, moody gym. She is standing in front of a large mirror, looking intensely at her own reflection. She is holding heavy dumbbells.
+         The lighting is dramatic, catching the definition of her muscles and the sheen on her plain black athletic gear.
+         The clothing is minimalist and completely free of any text, logos, or branding.
+         The mood is focused, disciplined, and powerful. Deep shadows, industrial gym background. Film grain finish.`;
     
     const imageUrl = await generateSocietyImage(prompt);
     if (imageUrl) {
