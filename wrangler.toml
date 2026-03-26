@@ -1,0 +1,6 @@
+name = "gemini-image-worker"
+main = "src/worker.ts"
+compatibility_date = "2024-03-25"
+
+[vars]
+# GEMINI_API_KEY will be set in the Cloudflare dashboard
