@@ -1,0 +1,17 @@
+{
+  "name": "gemini-image-worker",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker for Gemini Image Generation",
+  "main": "api/generate-image.ts",
+  "scripts": {
+    "build": "tsc api/generate-image.ts --noEmit",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@google/genai": "^0.2.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240320.1",
+    "typescript": "^5.4.2"
+  }
+}

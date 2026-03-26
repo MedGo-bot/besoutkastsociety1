@@ -102,7 +102,7 @@ export const COLUMNS: Column[] = [
     description: "Exclusive access to the boardrooms and private clubs where the future is decided.",
     category: "Access",
     image: "https://images.unsplash.com/photo-1577412647305-991150c7d163?auto=format&fit=crop&w=1200&q=80",
-    url: "https://besoutkastsociety.substack.com/s/the-inner-circle-with-ms-wilson"
+    url: "https://besoutkastsociety.substack.com/s/the-inner-square-with-ms-wilson"
   },
   {
     id: 14,

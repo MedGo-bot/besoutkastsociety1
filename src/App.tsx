@@ -13,33 +13,8 @@ export default function App() {
   // Image Generation States
   const [legendaryImage, setLegendaryImage] = useState<string | null>('/ledrule.jpg');
   const [forgeImage, setForgeImage] = useState<string | null>('https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=1200&q=80');
-  const [isGenerating, setIsGenerating] = useState<{ [key: string]: boolean }>({});
   const [showNewsletter, setShowNewsletter] = useState(false);
   const [showSitemap, setShowSitemap] = useState(false);
-
-  const handleGenerate = async (section: 'legendary' | 'forge') => {
-    setIsGenerating(prev => ({ ...prev, [section]: true }));
-    const prompt = section === 'legendary' 
-      ? `A high-contrast, black-and-white editorial photograph, Vogue-style. A female athlete is captured mid-air on a skateboard performing a technical trick in a brutalist concrete skate park.
-         The Gear: She wears Bes Outkast technical apparel: a matte-black, cropped windbreaker made of a high-sheen technical silk with a structured, architectural collar. On the left sleeve, a small, embossed rubberized "B.O.S." logo is visible. Her trousers are high-waisted, utility-style "techwear" joggers with laser-cut ventilation patterns and minimalist cargo pockets. She wears sleek, carbon-fiber reinforced low-profile sneakers.
-         Composition: Asymmetrical. The background shows blurred industrial stadium lights, sharp concrete bowls, and skate park geometry. Harsh, cinematic lighting creates deep shadows on the fabric’s texture. Film grain finish. The mood is "High-End Grit."`
-      : `A cinematic, high-contrast photographic portrait of a fit blonde woman in a dark, moody gym. She is standing in front of a large mirror, looking intensely at her own reflection. She is holding heavy dumbbells.
-         The lighting is dramatic, catching the definition of her muscles and the sheen on her plain black athletic gear.
-         The clothing is minimalist and completely free of any text, logos, or branding.
-         The mood is focused, disciplined, and powerful. Deep shadows, industrial gym background. Film grain finish.`;
-    
-    const imageUrl = await generateSocietyImage(prompt);
-    if (imageUrl) {
-      if (section === 'legendary') setLegendaryImage(imageUrl);
-      else setForgeImage(imageUrl);
-    } else {
-      // Fallback if generation fails
-      if (section === 'forge') {
-        setForgeImage("https://images.unsplash.com/photo-1534394416940-fa3c29d47de8?auto=format&fit=crop&w=800&q=80");
-      }
-    }
-    setIsGenerating(prev => ({ ...prev, [section]: false }));
-  };
 
   const handleViewChange = (view: 'home' | 'about') => {
     setCurrentView(view);
