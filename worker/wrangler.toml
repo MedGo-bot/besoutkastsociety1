@@ -1,5 +1,5 @@
 name = "gemini-image-worker"
-main = "index.ts"
+main = "worker/index.ts"
 compatibility_date = "2024-03-25"
 
 [vars]
