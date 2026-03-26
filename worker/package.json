@@ -4,7 +4,7 @@
   "description": "Cloudflare Worker for Gemini Image Generation",
   "main": "index.ts",
   "scripts": {
-    "build": "echo 'Building worker...'",
+    "build": "wrangler build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
