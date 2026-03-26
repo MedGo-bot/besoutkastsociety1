@@ -31,6 +31,7 @@ A quarterly News magazine of distinction, exploring the intersection of extreme 
    ```bash
    npm run dev
    ```
+   
 
 ## License
 
