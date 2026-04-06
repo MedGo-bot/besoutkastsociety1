@@ -97,7 +97,7 @@ export const COLUMNS: Column[] = [
   },
   {
     id: 13,
-    title: "The Inner Square",
+    title: "The Inner Square with Ms. Wilson",
     author: "Ms. Wilson",
     description: "Exclusive access to the boardrooms and private clubs where the future is decided.",
     category: "Access",

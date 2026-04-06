@@ -86,7 +86,11 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack }) => {
               {
                 num: "01",
                 title: "Discretion",
-                desc: "We value the private briefing over the public spectacle. Our most potent insights are reserved for the Inner Square."
+                desc: "We value the private briefing over the public spectacle. Our most potent insights are reserved for the ",
+                link: {
+                  text: "Inner Square",
+                  url: "https://besoutkastsociety.substack.com/s/the-inner-square-with-ms-wilson"
+                }
               },
               {
                 num: "02",
@@ -109,6 +113,16 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack }) => {
                 <h4 className="font-display text-xs uppercase tracking-[0.3em] font-bold mb-4">{protocol.title}</h4>
                 <p className="text-sm text-ink/60 leading-relaxed">
                   {protocol.desc}
+                  {'link' in protocol && (
+                    <a 
+                      href={protocol.link.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-ink font-bold hover:text-muted transition-colors no-underline border-b border-ink/20"
+                    >
+                      {protocol.link.text}
+                    </a>
+                  )}
                 </p>
               </motion.div>
             ))}
