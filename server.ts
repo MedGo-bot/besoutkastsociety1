@@ -11,6 +11,25 @@ async function startServer() {
 
   app.use(express.json());
 
+  // Redirect Map for SEO and broken links
+  const redirectMap: Record<string, string> = {
+    '/outcast': '/',
+    '/besoutkast': '/',
+    '/magazine': 'https://besoutkastsociety.substack.com',
+    '/newsletter': 'https://besoutkastsociety.substack.com/subscribe',
+    '/archive': 'https://besoutkastsociety.substack.com/archive',
+    '/columns': 'https://besoutkastsociety.substack.com/archive',
+    '/inner-square': 'https://besoutkastsociety.substack.com/s/the-inner-square-with-ms-wilson',
+    '/power-play': 'https://besoutkastsociety.substack.com/s/politico-discord-with-brandon-prescott',
+    '/wealth-our-demeanor': 'https://besoutkastsociety.substack.com/s/the-wealth-protocol-with-craig-wright'
+  };
+
+  Object.entries(redirectMap).forEach(([oldPath, newUrl]) => {
+    app.get(oldPath, (req, res) => {
+      res.redirect(308, newUrl);
+    });
+  });
+
   // Gemini API Proxy Route
   app.post("/api/generate-image", async (req, res) => {
     try {

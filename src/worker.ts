@@ -5,7 +5,7 @@ export interface Env {
 }
 
 export default {
-  async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
+  async fetch(request: Request, env: Env, ctx: any): Promise<Response> {
     // Handle CORS preflight
     if (request.method === "OPTIONS") {
       return new Response(null, {
@@ -38,25 +38,36 @@ export default {
         });
       }
 
-      const genAI = new GoogleGenAI({ apiKey: env.GEMINI_API_KEY });
-      const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-
-      const result = await model.generateContent([
-        prompt,
-        {
-          text: "Generate an image based on this prompt. Return only the base64 encoded image data.",
-        },
-      ]);
-
-      const response = await result.response;
-      const text = response.text();
+      const ai = new GoogleGenAI({ apiKey: env.GEMINI_API_KEY });
       
-      // Note: This is a simplified version. Real image generation with Gemini 
-      // might require specific multimodal outputs or a different model if 
-      // the user is specifically using an image generation model.
-      // However, based on the previous code, they were using @google/genai.
+      const response = await ai.models.generateContent({
+        model: 'gemini-2.5-flash-image',
+        contents: {
+          parts: [{ text: prompt }],
+        },
+        config: {
+          imageConfig: {
+            aspectRatio: "16:9",
+          },
+        },
+      });
 
-      return new Response(JSON.stringify({ image: text }), {
+      let imageData = null;
+      for (const part of response.candidates?.[0]?.content?.parts || []) {
+        if (part.inlineData) {
+          imageData = part.inlineData.data;
+          break;
+        }
+      }
+
+      if (!imageData) {
+        return new Response(JSON.stringify({ error: "Failed to generate image data." }), {
+          status: 500,
+          headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" },
+        });
+      }
+      
+      return new Response(JSON.stringify({ image: imageData }), {
         headers: {
           "Content-Type": "application/json",
           "Access-Control-Allow-Origin": "*",

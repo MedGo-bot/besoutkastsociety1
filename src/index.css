@@ -1,25 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Archivo+Narrow:wght@400;600;700&family=Inter:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-serif: "Playfair Display", serif;
+  --font-body: "Libre Baskerville", serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Archivo Narrow", sans-serif;
 
-  --color-accent: #0A0A0A;
-  --color-ink: #0A0A0A;
-  --color-paper: #FFFFFF;
-  --color-grey: #F4F4F4;
-  --color-muted: #666666;
+  --color-cream: #F2E7D5;
+  --color-cream-darker: #E6D8C1;
+  --color-burgundy: #800020;
+  --color-gold: #D4AF37;
+  --color-charcoal: #1A1A1A;
+  
+  --color-accent: var(--color-burgundy);
+  --color-ink: var(--color-burgundy);
+  --color-paper: var(--color-cream);
 }
 
 @layer base {
   body {
-    @apply bg-paper text-ink font-sans antialiased;
+    @apply bg-cream text-charcoal font-body antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif tracking-tight;
+    @apply font-serif tracking-[0.1em] text-burgundy;
   }
 
   * {
@@ -27,15 +31,20 @@
   }
 }
 
+@layer components {
+  .love-letter-body {
+    @apply font-serif italic text-burgundy/80 leading-relaxed;
+  }
+  .imperial-card {
+    @apply border-l border-gold transition-all duration-500 hover:bg-cream-darker;
+  }
+
+  .vogue-label {
+    @apply font-sans text-[10px] uppercase tracking-[0.3em] font-bold text-charcoal/60;
+  }
+}
+
 @layer utilities {
-  .border-black {
-    @apply border border-ink;
-  }
-
-  .nav-link {
-    @apply font-display text-[11px] uppercase tracking-[0.2em] font-bold hover:text-muted transition-colors;
-  }
-
   .ticker-scroll {
     animation: ticker 30s linear infinite;
   }

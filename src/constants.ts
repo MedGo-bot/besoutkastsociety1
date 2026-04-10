@@ -3,122 +3,122 @@ import { Column } from './types';
 export const COLUMNS: Column[] = [
   {
     id: 1,
-    title: "The Power Play",
+    title: "Political Discord",
     author: "Brandon Prescott",
-    description: "A fact-based, opinionated analysis of the political landscape across the U.S. and foreign governments.",
-    category: "Politics",
-    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80",
+    description: "A fact-based, opinionated analysis of the political landscape. We dissect the maneuvers of foreign governments and the domestic stage with surgical precision.",
+    category: "Exclusive Insights",
+    image: "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1200&q=80",
     url: "https://besoutkastsociety.substack.com/s/politico-discord-with-brandon-prescott"
   },
   {
-    id: 2,
-    title: "Fashion with Juan",
-    author: "Juan",
-    description: "A definitive playbook on situational attire, global etiquette, and the latest shifts in the fashion world, featuring exclusive artist spotlights.",
-    category: "Style",
-    image: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1200&q=80",
-    url: "https://besoutkastsociety.substack.com/s/fashion-with-juan"
+    id: 7,
+    title: "The Wealth Our Demeanor",
+    author: "Craig Wright",
+    description: "Strategic insights into global investment and the 'Art of Persuasion' in high-stakes deal-making. We track the key players and market forces.",
+    category: "Exclusive Insights",
+    image: "https://images.unsplash.com/photo-1454165833767-0274b24f6733?auto=format&fit=crop&w=1200&q=80",
+    url: "https://besoutkastsociety.substack.com/s/the-wealth-protocol-with-craig-wright"
   },
   {
-    id: 3,
-    title: "Whiskey with the Angels",
-    description: "A Hugh Hefner-inspired lifestyle column exploring the refined world of whiskey, wine, and gourmet experiences for the modern connoisseur.",
-    category: "Lifestyle",
-    image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1200&q=80",
-    url: "https://besoutkastsociety.substack.com/s/whiskey-with-the-angels"
+    id: 23,
+    title: "The Inner Square",
+    author: "Ms. Wilson",
+    description: "Exclusive access to the private clubs and boardrooms where the world's most important decisions are made. The briefing you won't find anywhere else.",
+    category: "Exclusive Insights",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+    url: "https://besoutkastsociety.substack.com/s/the-inner-circle-with-ms-wilson"
   },
   {
     id: 4,
     title: "The Tactical Advantage",
     author: "Seth Green",
-    description: "A deep dive into the tech world: what's working, what's failing, and what's next. Exploring the market's latest innovations and the future tech we're still waiting for, featuring spotlights on industry 'Tech Bros'.",
-    category: "Innovation",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80",
+    description: "A deep dive into the innovations driving the future. From market-shifting tech to the visionary 'Tech Bros' behind them.",
+    category: "Exclusive Insights",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
     url: "https://besoutkastsociety.substack.com/s/the-tactical-advantage-with-seth"
   },
   {
-    id: 5,
-    title: "Black Man on the Run",
-    description: "A unique perspective on out-of-this-world vacation spots. Experience global travel, exotic food, and diverse cultures through the lens of a Black man, with detailed write-ups on what to truly expect.",
-    category: "Culture",
-    image: "https://images.unsplash.com/photo-1516575334481-f85287c2c82d?auto=format&fit=crop&w=1200&q=80",
-    url: "https://besoutkastsociety.substack.com/s/black-man-on-the-run"
+    id: 3,
+    title: "Whiskey with the Angels",
+    description: "A refined exploration of the world's finest spirits and gourmet experiences. Curated for the modern connoisseur who values depth over trend.",
+    category: "Exclusive Insights",
+    image: "https://images.unsplash.com/photo-1527281400828-ac737a999b9a?auto=format&fit=crop&w=1200&q=80",
+    url: "https://besoutkastsociety.substack.com/s/whiskey-with-the-angels"
+  },
+  {
+    id: 2,
+    title: "Fashion with Juan",
+    author: "Juan",
+    description: "The definitive playbook on situational attire and global etiquette. The intersection of technical apparel and high-fashion.",
+    category: "Global Lifestyle",
+    image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80",
+    url: "https://besoutkastsociety.substack.com/s/fashion-with-juan"
+  },
+  {
+    id: 14,
+    title: "Run Out Boyz",
+    description: "The high-stakes world of BMX and skateboarding. Documenting the athletes pushing the limits of the physical through a professional lens.",
+    category: "Global Lifestyle",
+    image: "https://images.unsplash.com/photo-1564982024202-75396c361516?auto=format&fit=crop&w=1200&q=80",
+    url: "https://besoutkastsociety.substack.com/s/run-out-boyz"
   },
   {
     id: 6,
     title: "Edge of the World",
-    description: "The ultimate outdoorsman's guide. From precision knives and firearms to the art of living off the land in the world's most remote territories.",
-    category: "Outdoors",
+    description: "The ultimate guide for the modern outdoorsman. From precision tools to the philosophy of self-reliance in remote territories.",
+    category: "Global Lifestyle",
     image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
     url: "https://besoutkastsociety.substack.com/s/edge-of-the-world"
-  },
-  {
-    id: 7,
-    title: "The Wealth Protocol",
-    author: "Craig Wright",
-    description: "Strategic insights into global investment, the current state of the market, and the key players driving it. Master the 'Art of Persuasion' in high-stakes deal-making.",
-    category: "Finance",
-    image: "https://images.unsplash.com/photo-1521791136064-7986c2959210?auto=format&fit=crop&w=1200&q=80",
-    url: "https://besoutkastsociety.substack.com/s/the-wealth-protocol-with-craig-wright"
   },
   {
     id: 8,
     title: "The Digital Arena",
     author: "Tammy Gale",
-    description: "The business of high-stakes gaming and the niche interests that drive the modern visionary.",
-    category: "Gaming",
-    image: "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&w=1200&q=80",
+    description: "The business and culture of high-stakes gaming. Exploring the niche interests driving the modern visionary in the digital realm.",
+    category: "Global Lifestyle",
+    image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80",
     url: "https://besoutkastsociety.substack.com/s/the-digital-arena-with-tammy-gale"
   },
   {
+    id: 15,
+    title: "Legendary Rule",
+    description: "The legacy of leadership. Studying the titans of industry and the lessons they leave behind for those who dare to follow.",
+    category: "Global Lifestyle",
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+    url: "https://besoutkastsociety.substack.com/s/legendary-rule"
+  },
+  {
+    id: 5,
+    title: "Black Man on the Run",
+    description: "Global travel and diverse cultures through a unique lens. Detailed intelligence on out-of-this-world vacation spots.",
+    category: "Raw Grit",
+    image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80",
+    url: "https://besoutkastsociety.substack.com/s/black-man-on-the-run"
+  },
+  {
     id: 10,
-    title: "The Mentorship Protocol",
-    description: "Strategic mentorship for the next generation of C-suite leadership.",
-    category: "Mentorship",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80",
+    title: "Ask Fred",
+    description: "Strategic mentorship and the Our Demeanor Agent. Blueprints for C-suite excellence and the discipline required to maintain it.",
+    category: "Raw Grit",
+    image: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1200&q=80",
     url: "https://besoutkastsociety.substack.com/s/ask-fred"
+  },
+  {
+    id: 12,
+    title: "The Forge",
+    description: "The craftsmanship behind luxury. From bespoke tailoring to custom extreme gear, celebrating the dedication to quality.",
+    category: "Raw Grit",
+    image: "https://images.unsplash.com/photo-1505015920881-0f83c2f7c95e?auto=format&fit=crop&w=1200&q=80",
+    url: "https://besoutkastsociety.substack.com/s/the-forge"
   },
   {
     id: 11,
     title: "Southern Grit",
     author: "Jimi Holler",
-    description: "Southern heritage meets modern corporate leadership. A study in refined resilience.",
-    category: "Heritage",
-    image: "https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=1200&q=80",
+    description: "Where heritage meets modern corporate leadership. A study in refined resilience and values of the past informing the future.",
+    category: "Raw Grit",
+    image: "https://images.unsplash.com/photo-1449156001935-d28735551103?auto=format&fit=crop&w=1200&q=80",
     url: "https://besoutkastsociety.substack.com/s/southern-grit-with-jimi-holler"
-  },
-  {
-    id: 12,
-    title: "The Artisan's Blade",
-    description: "The craftsmanship behind luxury goods. From bespoke tailoring to custom extreme gear.",
-    category: "Craft",
-    image: "https://images.unsplash.com/photo-1534394416940-fa3c29d47de8?auto=format&fit=crop&w=1200&q=80",
-    url: "https://besoutkastsociety.substack.com/s/the-forge"
-  },
-  {
-    id: 13,
-    title: "The Inner Square with Ms. Wilson",
-    author: "Ms. Wilson",
-    description: "Exclusive access to the boardrooms and private clubs where the future is decided.",
-    category: "Access",
-    image: "https://images.unsplash.com/photo-1577412647305-991150c7d163?auto=format&fit=crop&w=1200&q=80",
-    url: "https://besoutkastsociety.substack.com/s/the-inner-square-with-ms-wilson"
-  },
-  {
-    id: 14,
-    title: "Run Out Boyz",
-    description: "The high-stakes world of BMX and skateboarding through a professional lens.",
-    category: "Extreme",
-    image: "https://images.unsplash.com/photo-1528629202440-2db0a9695611?auto=format&fit=crop&w=1200&q=80",
-    url: "https://besoutkastsociety.substack.com/s/run-out-boyz"
-  },
-  {
-    id: 15,
-    title: "Legendary Rule",
-    description: "The legacy of leadership. Lessons from the titans of industry.",
-    category: "Legacy",
-    image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80",
-    url: "https://besoutkastsociety.substack.com/s/legendary-rule"
   }
 ];
 

@@ -1,0 +1,123 @@
+{
+  "sections": [
+    {
+      "id": "exclusive-lifestyle",
+      "title": "Exclusive Lifestyle",
+      "tagline": "Curated intelligence for the global sovereign. A definitive chronicle of extreme performance and high-stakes strategy.",
+      "journals": [
+        {
+          "title": "Political Discord",
+          "author": "Brandon Prescott",
+          "substackUrl": "https://besoutkastsociety.substack.com/s/politico-discord-with-brandon-prescott",
+          "imageSrc": "https://images.unsplash.com/photo-1531384441138-2736e62e0919?auto=format&fit=crop&w=1200&q=80",
+          "description": "A sharp, unfiltered analysis of the power dynamics and ideological shifts defining the modern political landscape."
+        },
+        {
+          "title": "The Wealth Protocol",
+          "author": "Craig Wright",
+          "substackUrl": "https://besoutkastsociety.substack.com/s/the-wealth-protocol-with-craig-wright",
+          "imageSrc": "https://images.unsplash.com/photo-1556912177-466f92cb087e?auto=format&fit=crop&w=1200&q=80&sat=-100",
+          "description": "Deconstructing the architecture of generational affluence and the strategic discipline required to sustain an elite financial legacy."
+        },
+        {
+          "title": "The Inner Square",
+          "author": "Ms. Wilson",
+          "substackUrl": "https://besoutkastsociety.substack.com/s/the-inner-circle-with-ms-wilson",
+          "imageSrc": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+          "description": "An exclusive gateway into the private dialogues and strategic insights shared among the world's most influential visionaries."
+        },
+        {
+          "title": "The Tactical Advantage",
+          "author": "Seth Green",
+          "substackUrl": "https://besoutkastsociety.substack.com/s/the-tactical-advantage-with-seth",
+          "imageSrc": "https://images.unsplash.com/photo-1510511459019-5dee667ff19b?auto=format&fit=crop&w=1200&q=80",
+          "description": "Mastering the art of strategic positioning and the high-stakes decision-making that defines extreme performance."
+        },
+        {
+          "title": "Whiskey with the Angels",
+          "author": "Editorial Team",
+          "substackUrl": "https://besoutkastsociety.substack.com/s/whiskey-with-the-angels",
+          "imageSrc": "https://images.unsplash.com/photo-1569529465841-dfecdab7503b?auto=format&fit=crop&w=1200&q=80",
+          "description": "A refined exploration of the world's most exceptional spirits and the storied traditions of artisanal craftsmanship."
+        }
+      ]
+    },
+    {
+      "id": "global-lifestyle",
+      "title": "Global Lifestyle",
+      "tagline": "A study in refined living and the architecture of a purposeful life. Exploring the intersections of culture, travel, and legacy.",
+      "journals": [
+        {
+          "title": "Fashion with Juan",
+          "author": "Juan",
+          "substackUrl": "https://besoutkastsociety.substack.com/s/fashion-with-juan",
+          "imageSrc": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80",
+          "description": "Juan invites you to transcend conventional style and explore the boundaries of editorial expression through the curated, high-concept lens of your personal stylist."
+        },
+        {
+          "title": "The Digital Arena with Tammy Gale",
+          "author": "Tammy Gale",
+          "substackUrl": "https://besoutkastsociety.substack.com/s/the-digital-arena-with-tammy-gale",
+          "imageSrc": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
+          "description": "Navigating the complex intersection of emerging technology, digital sovereignty, and the future of human connection."
+        },
+        {
+          "title": "Legendary Rule",
+          "author": "Editorial Team",
+          "substackUrl": "https://besoutkastsociety.substack.com/s/legendary-rule",
+          "imageSrc": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=80",
+          "description": "Explore the limit-testing world of extreme sports through Legendary Rule, a chronicle of high-velocity performance, elite athleticism, and the mental discipline required to conquer the edge."
+        },
+        {
+          "title": "Run Out Boyz",
+          "author": "Editorial Team",
+          "substackUrl": "https://besoutkastsociety.substack.com/s/run-out-boyz",
+          "imageSrc": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1200&q=80",
+          "description": "A high-velocity chronicle of automotive excellence, precision engineering, and the culture of extreme speed."
+        },
+        {
+          "title": "Edge of the World",
+          "author": "Editorial Team",
+          "substackUrl": "https://besoutkastsociety.substack.com/s/edge-of-the-world",
+          "imageSrc": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+          "description": "Documenting the pursuit of the extraordinary in the most remote and challenging environments on the planet."
+        }
+      ]
+    },
+    {
+      "id": "raw-grit",
+      "title": "Raw Grit",
+      "tagline": "Unfiltered perspectives on the resilience of the human spirit. The raw truth behind the 'Big Jump' and the grit required to sustain it.",
+      "journals": [
+        {
+          "title": "Southern Grit with Jimi Holler",
+          "author": "Jimi Holler",
+          "substackUrl": "https://besoutkastsociety.substack.com/s/southern-grit-with-jimi-holler",
+          "imageSrc": "https://images.unsplash.com/photo-1551358902-04e93ad3184d?auto=format&fit=crop&w=1200&q=80&sat=-100",
+          "description": "A study in refined southern living, exploring the intersections of heritage, hospitality, and the architecture of a purposeful life."
+        },
+        {
+          "title": "Black Man on the Run",
+          "author": "Editorial Team",
+          "substackUrl": "https://besoutkastsociety.substack.com/s/black-man-on-the-run",
+          "imageSrc": "https://images.unsplash.com/photo-1618677603286-0ec5629f7468?auto=format&fit=crop&w=1200&q=80",
+          "description": "A cinematic exploration of global mobility, cultural immersion, and the pursuit of a life without boundaries."
+        },
+        {
+          "title": "Ask Fred",
+          "author": "Fred",
+          "substackUrl": "https://besoutkastsociety.substack.com/s/ask-fred",
+          "imageSrc": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=1200&q=80",
+          "description": "Direct, expert guidance on navigating the complexities of modern life with clarity, purpose, and refined perspective."
+        },
+        {
+          "title": "The Forge",
+          "author": "Editorial Team",
+          "substackUrl": "https://besoutkastsociety.substack.com/s/the-forge",
+          "imageSrc": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80",
+          "description": "Examining the rigorous process of personal transformation and the mental discipline required to build an enduring legacy."
+        }
+      ]
+    }
+  ]
+}

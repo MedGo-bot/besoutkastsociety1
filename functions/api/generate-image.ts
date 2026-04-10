@@ -1,6 +1,6 @@
 import { GoogleGenAI } from "@google/genai";
 
-export async function onRequestPost(context) {
+export async function onRequestPost(context: { request: Request; env: { GEMINI_API_KEY: string } }) {
   try {
     const { request, env } = context;
     const body = await request.json();
