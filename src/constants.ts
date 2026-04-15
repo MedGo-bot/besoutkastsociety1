@@ -59,7 +59,7 @@ export const COLUMNS: Column[] = [
     title: "Run Out Boyz",
     description: "The high-stakes world of BMX and skateboarding. Documenting the athletes pushing the limits of the physical through a professional lens.",
     category: "Global Lifestyle",
-    image: "https://images.unsplash.com/photo-1564982024202-75396c361516?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.pexels.com/photo/police-cars-on-the-road-during-the-night-12727665/",
     url: "https://besoutkastsociety.substack.com/s/run-out-boyz"
   },
   {
