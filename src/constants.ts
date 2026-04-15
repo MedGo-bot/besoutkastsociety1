@@ -117,7 +117,7 @@ export const COLUMNS: Column[] = [
     author: "Jimi Holler",
     description: "Where heritage meets modern corporate leadership. A study in refined resilience and values of the past informing the future.",
     category: "Raw Grit",
-    image: "https://images.unsplash.com/photo-1449156001935-d28735551103?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.pixabay.com/illustrations/rodeo-cowboy-horse-bull-action-9794081/",
     url: "https://besoutkastsociety.substack.com/s/southern-grit-with-jimi-holler"
   }
 ];
