@@ -76,7 +76,7 @@ export const COLUMNS: Column[] = [
     author: "Tammy Gale",
     description: "From red carpet whispers to trending hits, your ultimate backstage pass to everything entertainment.",
     category: "Global Lifestyle",
-    image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.pexels.com/photo/woman-wearing-a-zebra-print-black-and-red-suit-13939461/",
     url: "https://besoutkastsociety.substack.com/s/the-digital-arena-with-tammy-gale"
   },
   {
