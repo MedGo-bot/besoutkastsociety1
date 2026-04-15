@@ -9,21 +9,21 @@
           "title": "Political Discord",
           "author": "Brandon Prescott",
           "substackUrl": "https://besoutkastsociety.substack.com/s/politico-discord-with-brandon-prescott",
-          "imageSrc": "https://images.pexels.com/photo/a-bearded-man-in-a-suit-looking-at-his-smartphone-4797689/",
+          "imageSrc": "/images/political-discord.jpg",
           "description": "A sharp, unfiltered analysis of the power dynamics and ideological shifts defining the modern political landscape."
         },
         {
           "title": "The Wealth Protocol",
           "author": "Craig Wright",
           "substackUrl": "https://besoutkastsociety.substack.com/s/the-wealth-protocol-with-craig-wright",
-          "imageSrc": "https://images.pixabay.com/illustrations/ai-generated-polar-bear-bear-money-8436411/",
+          "imageSrc": "/images/craig-wright.jpg",
           "description": "Strategic insights into global investment and the 'Art of Persuasion' in high-stakes deal-making. We track the key players and market forces."
         },
         {
           "title": "The Inner Square",
           "author": "Ms. Wilson",
           "substackUrl": "https://besoutkastsociety.substack.com/s/the-inner-circle-with-ms-wilson",
-          "imageSrc": "https://images.https://canva.link/cbmqlgl03l5p5ew",
+          "imageSrc": "/images/ms-wilson.png",
           "description": "The legacy of leadership. Studying the titans of industry and the lessons they leave behind for those who dare to follow."
         },
         {
@@ -37,7 +37,7 @@
           "title": "Whiskey with the Angels",
           "author": "Editorial Team",
           "substackUrl": "https://besoutkastsociety.substack.com/s/whiskey-with-the-angels",
-          "imageSrc": "https://images.pixabay.com/illustrations/woman-portrait-angel-figure-wings-9926551/",
+          "imageSrc": "/images/whiskey.jpg",
           "description": "A refined exploration of the world's most exceptional spirits and the storied traditions of artisanal craftsmanship."
         }
       ]
@@ -51,35 +51,35 @@
           "title": "Fashion with Juan",
           "author": "Juan",
           "substackUrl": "https://besoutkastsociety.substack.com/s/fashion-with-juan",
-          "imageSrc": "https://images.pexels.com/photo/haute-couture-model-in-fashion-clothes-onstage-13045954/",
+          "imageSrc": "/images/juan.jpg",
           "description": "Juan invites you to transcend conventional style and explore the boundaries of editorial expression through the curated, high-concept lens of your personal stylist."
         },
         {
           "title": "The Digital Arena with Tammy Gale",
           "author": "Tammy Gale",
           "substackUrl": "https://besoutkastsociety.substack.com/s/the-digital-arena-with-tammy-gale",
-          "imageSrc": "https://images.pexels.com/photo/woman-wearing-a-zebra-print-black-and-red-suit-13939461/",
+          "imageSrc": "/images/tammy-gale.jpg",
           "description": "From red carpet whispers to trending hits, your ultimate backstage pass to everything entertainment."
         },
         {
           "title": "Legendary Rule",
           "author": "Editorial Team",
           "substackUrl": "https://besoutkastsociety.substack.com/s/legendary-rule",
-          "imageSrc": https://images.https://canva.link/3lv2z3uc9yaxaam",
+          "imageSrc": "/images/legenary-rule.jpg",
           "description": "Explore the limit-testing world of extreme sports through Legendary Rule, a chronicle of high-velocity performance, elite athleticism, and the mental discipline required to conquer the edge."
         },
         {
           "title": "Run Out Boyz",
           "author": "Vince Kidd",
           "substackUrl": "https://besoutkastsociety.substack.com/s/run-out-boyz",
-          "imageSrc": "https://images.pexels.com/photo/police-cars-on-the-road-during-the-night-12727665/",
+          "imageSrc": "/images/run-out-boyz.jpg",
           "description": "From the mechanics of modern crime to the deconstruction of historic heists, this is the forensic audit of the underworld"
         },
         {
           "title": "Edge of the World",
           "author": "Editorial Team",
           "substackUrl": "https://besoutkastsociety.substack.com/s/edge-of-the-world",
-          "imageSrc": "https://images.canva.link/p7x3jgghk25a09m",
+          "imageSrc": "/images/edge-of-the-world.png",
           "description": "The ultimate guide for the modern outdoorsman. From precision tools to the philosophy of self-reliance in remote territories."
         }
       ]
@@ -93,14 +93,14 @@
           "title": "Southern Grit with Jimi Holler",
           "author": "Jimi Holler",
           "substackUrl": "https://besoutkastsociety.substack.com/s/southern-grit-with-jimi-holler",
-          "imageSrc": "https://images.pixabay.com/illustrations/rodeo-cowboy-horse-bull-action-9794081/",
+          "imageSrc": "/images/southern-grit.jpg",
           "description": "A study in refined southern living, exploring the intersections of heritage, hospitality, and the architecture of a purposeful life."
         },
         {
           "title": "Black Man on the Run",
           "author": "Editorial Team",
           "substackUrl": "https://besoutkastsociety.substack.com/s/black-man-on-the-run",
-          "imageSrc": "https://images.https://canva.link/3lv2z3uc9yaxaam",
+          "imageSrc": "/images/black-man-on-the-run.jpg",
           "description": "A cinematic exploration of global mobility, cultural immersion, and the pursuit of a life without boundaries."
         },
         {
@@ -114,7 +114,7 @@
           "title": "The Forge",
           "author": "Editorial Team",
           "substackUrl": "https://besoutkastsociety.substack.com/s/the-forge",
-          "imageSrc": "https://images.pixabay.com/photos/fit-strong-female-fitness-training-2562981/",
+          "imageSrc": "/images/forge.jpg",
           "description": "Examining the rigorous process of personal transformation and the mental discipline required to build an enduring legacy."
         }
       ]
