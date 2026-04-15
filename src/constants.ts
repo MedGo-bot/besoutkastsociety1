@@ -7,7 +7,7 @@ export const COLUMNS: Column[] = [
     author: "Brandon Prescott",
     description: "A fact-based, opinionated analysis of the political landscape. We dissect the maneuvers of foreign governments and the domestic stage with surgical precision.",
     category: "Exclusive Insights",
-    image: "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.pexels.com/photo/a-bearded-man-in-a-suit-looking-at-his-smartphone-4797689/",
     url: "https://besoutkastsociety.substack.com/s/politico-discord-with-brandon-prescott"
   },
   {
