@@ -25,7 +25,7 @@ export const COLUMNS: Column[] = [
     author: "Ms. Wilson",
     description: "The legacy of leadership. Studying the titans of industry and the lessons they leave behind for those who dare to follow.",
     category: "Exclusive Insights",
-    image: "https://images.canva.link/cbmqlgl03l5p5ew",
+    image: "https://images.sites.google.com/besheanwe.com/ms-wilson",
     url: "https://besoutkastsociety.substack.com/s/the-inner-square-with-ms-wilson"
   },
   {
@@ -84,7 +84,7 @@ export const COLUMNS: Column[] = [
     title: "Legendary Rule",
     description: "The legacy of leadership. Studying the titans of industry and the lessons they leave behind for those who dare to follow.",
     category: "Global Lifestyle",
-    image: "https://images.canva.link/3lv2z3uc9yaxaam",
+    image: "https://images.pexels.com/photo/men-training-martial-arts-14796266/",
     url: "https://besoutkastsociety.substack.com/s/legendary-rule"
   },
   {
