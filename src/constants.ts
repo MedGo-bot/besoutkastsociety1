@@ -23,7 +23,7 @@ export const COLUMNS: Column[] = [
     id: 23,
     title: "The Inner Square",
     author: "Ms. Wilson",
-    description: "Exclusive access to the private clubs and boardrooms where the world's most important decisions are made. The briefing you won't find anywhere else.",
+    description: "An exclusive gateway into the private dialogues and strategic insights shared among the world's most influential visionaries.",
     category: "Exclusive Insights",
     image: "https://images.canva.link/cbmqlgl03l5p5ew",
     url: "https://besoutkastsociety.substack.com/s/the-inner-circle-with-ms-wilson"
