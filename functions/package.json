@@ -5,7 +5,9 @@
   "main": "api/generate-image.ts",
   "scripts": {
     "build": "tsc api/generate-image.ts --noEmit",
-    "test": "echo \"No test specified\" && exit 0"
+    "test": "echo \"No test specified\" && exit 0",
+    "deploy": "npm run build"
+  },
   },
   "dependencies": {
     "@google/genai": "^1.43.0"
