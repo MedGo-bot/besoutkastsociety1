@@ -26,7 +26,7 @@ export const COLUMNS: Column[] = [
     description: "The legacy of leadership. Studying the titans of industry and the lessons they leave behind for those who dare to follow.",
     category: "Exclusive Insights",
     image: "https://images.canva.link/cbmqlgl03l5p5ew",
-    url: "https://besoutkastsociety.substack.com/s/the-inner-circle-with-ms-wilson"
+    url: "https://besoutkastsociety.substack.com/s/the-inner-square-with-ms-wilson"
   },
   {
     id: 4,
