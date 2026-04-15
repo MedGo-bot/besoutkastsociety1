@@ -16,7 +16,7 @@ export const COLUMNS: Column[] = [
     author: "Craig Wright",
     description: "Strategic insights into global investment and the 'Art of Persuasion' in high-stakes deal-making. We track the key players and market forces.",
     category: "Exclusive Insights",
-    image: "https://images.pixabay.com/illustrations/ai-generated-polar-bear-bear-money-8436411/",
+    image: "https://images.pexels.com/photo/man-with-tattoos-sitting-topless-with-laptop-11873307/",
     url: "https://besoutkastsociety.substack.com/s/the-wealth-protocol-with-craig-wright"
   },
   {
