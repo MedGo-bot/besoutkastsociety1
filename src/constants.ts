@@ -42,7 +42,7 @@ export const COLUMNS: Column[] = [
     title: "Whiskey with the Angels",
     description: "A refined exploration of the world's finest spirits and gourmet experiences. Curated for the modern connoisseur who values depth over trend.",
     category: "Exclusive Insights",
-    image: "https://images.unsplash.com/photo-1527281400828-ac737a999b9a?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.pixabay.com/illustrations/woman-portrait-angel-figure-wings-9926551/",
     url: "https://besoutkastsociety.substack.com/s/whiskey-with-the-angels"
   },
   {
