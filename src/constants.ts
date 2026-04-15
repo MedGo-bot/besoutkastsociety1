@@ -25,7 +25,7 @@ export const COLUMNS: Column[] = [
     author: "Ms. Wilson",
     description: "Exclusive access to the private clubs and boardrooms where the world's most important decisions are made. The briefing you won't find anywhere else.",
     category: "Exclusive Insights",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.canva.link/cbmqlgl03l5p5ew",
     url: "https://besoutkastsociety.substack.com/s/the-inner-circle-with-ms-wilson"
   },
   {
@@ -84,7 +84,7 @@ export const COLUMNS: Column[] = [
     title: "Legendary Rule",
     description: "The legacy of leadership. Studying the titans of industry and the lessons they leave behind for those who dare to follow.",
     category: "Global Lifestyle",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.pexels.com/photo/men-fighting-in-the-ring-5424533/",
     url: "https://besoutkastsociety.substack.com/s/legendary-rule"
   },
   {
