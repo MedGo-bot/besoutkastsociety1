@@ -51,7 +51,7 @@ export const COLUMNS: Column[] = [
     author: "Juan",
     description: "Juan invites you to transcend conventional style and explore the boundaries of editorial expression through the curated, high-concept lens of your personal stylist.",
     category: "Global Lifestyle",
-    image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.pexels.com/photo/haute-couture-model-in-fashion-clothes-onstage-13045954/",
     url: "https://besoutkastsociety.substack.com/s/fashion-with-juan"
   },
   {
