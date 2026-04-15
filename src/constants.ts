@@ -7,16 +7,16 @@ export const COLUMNS: Column[] = [
     author: "Brandon Prescott",
     description: "A fact-based, opinionated analysis of the political landscape. We dissect the maneuvers of foreign governments and the domestic stage with surgical precision.",
     category: "Exclusive Insights",
-    image: "https://images.pexels.com/photo/a-bearded-man-in-a-suit-looking-at-his-smartphone-4797689/",
+    image: "/images/political-discord.jpg",
     url: "https://besoutkastsociety.substack.com/s/politico-discord-with-brandon-prescott"
   },
   {
     id: 7,
-    title: "The Wealth Our Demeanor",
+    title: "The Wealth Protocol",
     author: "Craig Wright",
     description: "Strategic insights into global investment and the 'Art of Persuasion' in high-stakes deal-making. We track the key players and market forces.",
     category: "Exclusive Insights",
-    image: "https://images.pexels.com/photo/man-with-tattoos-sitting-topless-with-laptop-11873307/",
+    image: "/images/craig-wright.jpg",
     url: "https://besoutkastsociety.substack.com/s/the-wealth-protocol-with-craig-wright"
   },
   {
@@ -25,7 +25,7 @@ export const COLUMNS: Column[] = [
     author: "Ms. Wilson",
     description: "The legacy of leadership. Studying the titans of industry and the lessons they leave behind for those who dare to follow.",
     category: "Exclusive Insights",
-    image: "https://images.sites.google.com/besheanwe.com/ms-wilson",
+    image: "/images/ms-wilson.png",
     url: "https://besoutkastsociety.substack.com/s/the-inner-square-with-ms-wilson"
   },
   {
@@ -34,7 +34,7 @@ export const COLUMNS: Column[] = [
     author: "Seth Green",
     description: "A deep dive into the innovations driving the future. From market-shifting tech to the visionary 'Tech Bros' behind them.",
     category: "Exclusive Insights",
-    image: "https://images.pexels.com/photo/man-with-tattoos-sitting-topless-with-laptop-11873307/",
+    image: "/images/seth-green.jpg",
     url: "https://besoutkastsociety.substack.com/s/the-tactical-advantage-with-seth"
   },
   {
@@ -42,7 +42,7 @@ export const COLUMNS: Column[] = [
     title: "Whiskey with the Angels",
     description: "A refined exploration of the world's finest spirits and gourmet experiences. Curated for the modern connoisseur who values depth over trend.",
     category: "Exclusive Insights",
-    image: "https://images.pixabay.com/illustrations/woman-portrait-angel-figure-wings-9926551/",
+    image: "/images/whiskey.jpg",
     url: "https://besoutkastsociety.substack.com/s/whiskey-with-the-angels"
   },
   {
@@ -51,7 +51,7 @@ export const COLUMNS: Column[] = [
     author: "Juan",
     description: "Juan invites you to transcend conventional style and explore the boundaries of editorial expression through the curated, high-concept lens of your personal stylist.",
     category: "Global Lifestyle",
-    image: "https://images.pexels.com/photo/haute-couture-model-in-fashion-clothes-onstage-13045954/",
+    image: "/images/juan.jpg",
     url: "https://besoutkastsociety.substack.com/s/fashion-with-juan"
   },
   {
@@ -59,7 +59,7 @@ export const COLUMNS: Column[] = [
     title: "Run Out Boyz",
     description: "From the mechanics of modern crime to the deconstruction of historic heists, this is the forensic audit of the underworld",
     category: "Global Lifestyle",
-    image: "https://images.pexels.com/photo/police-cars-on-the-road-during-the-night-12727665/",
+    image: "/images/run-out-boyz.jpg",
     url: "https://besoutkastsociety.substack.com/s/run-out-boyz"
   },
   {
@@ -67,7 +67,7 @@ export const COLUMNS: Column[] = [
     title: "Edge of the World",
     description: "The ultimate guide for the modern outdoorsman. From precision tools to the philosophy of self-reliance in remote territories.",
     category: "Global Lifestyle",
-    image: "https://images.canva.link/p7x3jgghk25a09m",
+    image: "/images/edge-of-the-world.png",
     url: "https://besoutkastsociety.substack.com/s/edge-of-the-world"
   },
   {
@@ -76,7 +76,7 @@ export const COLUMNS: Column[] = [
     author: "Tammy Gale",
     description: "From red carpet whispers to trending hits, your ultimate backstage pass to everything entertainment.",
     category: "Global Lifestyle",
-    image: "https://images.pexels.com/photo/woman-wearing-a-zebra-print-black-and-red-suit-13939461/",
+    image: "/images/tammy-gale.jpg",
     url: "https://besoutkastsociety.substack.com/s/the-digital-arena-with-tammy-gale"
   },
   {
@@ -84,7 +84,7 @@ export const COLUMNS: Column[] = [
     title: "Legendary Rule",
     description: "The legacy of leadership. Studying the titans of industry and the lessons they leave behind for those who dare to follow.",
     category: "Global Lifestyle",
-    image: "https://images.pexels.com/photo/men-training-martial-arts-14796266/",
+    image: "/images/legenary-rule.jpg",
     url: "https://besoutkastsociety.substack.com/s/legendary-rule"
   },
   {
@@ -92,7 +92,7 @@ export const COLUMNS: Column[] = [
     title: "Black Man on the Run",
     description: "Global travel and diverse cultures through a unique lens. Detailed intelligence on out-of-this-world vacation spots.",
     category: "Raw Grit",
-    image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/black-man-on-the-run.jpg",
     url: "https://besoutkastsociety.substack.com/s/black-man-on-the-run"
   },
   {
@@ -100,7 +100,7 @@ export const COLUMNS: Column[] = [
     title: "Ask Fred",
     description: "Strategic mentorship and the Our Demeanor Agent. Blueprints for C-suite excellence and the discipline required to maintain it.",
     category: "Raw Grit",
-    image: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/ask-fred.jpg",
     url: "https://besoutkastsociety.substack.com/s/ask-fred"
   },
   {
@@ -108,7 +108,7 @@ export const COLUMNS: Column[] = [
     title: "The Forge",
     description: "The craftsmanship behind luxury. From bespoke tailoring to custom extreme gear, celebrating the dedication to quality.",
     category: "Raw Grit",
-    image: "https://images.unsplash.com/photo-1505015920881-0f83c2f7c95e?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/forge.jpg",
     url: "https://besoutkastsociety.substack.com/s/the-forge"
   },
   {
@@ -117,7 +117,7 @@ export const COLUMNS: Column[] = [
     author: "Jimi Holler",
     description: "A study in refined southern living, exploring the intersections of heritage, hospitality, and the architecture of a purposeful life.",
     category: "Raw Grit",
-    image: "https://images.pixabay.com/illustrations/rodeo-cowboy-horse-bull-action-9794081/",
+    image: "/images/southern-grit.jpg",
     url: "https://besoutkastsociety.substack.com/s/southern-grit-with-jimi-holler"
   }
 ];
