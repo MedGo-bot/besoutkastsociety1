@@ -74,7 +74,7 @@ export const COLUMNS: Column[] = [
     id: 8,
     title: "The Digital Arena",
     author: "Tammy Gale",
-    description: "The business and culture of high-stakes gaming. Exploring the niche interests driving the modern visionary in the digital realm.",
+    description: "From red carpet whispers to trending hits, your ultimate backstage pass to everything entertainment.",
     category: "Global Lifestyle",
     image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80",
     url: "https://besoutkastsociety.substack.com/s/the-digital-arena-with-tammy-gale"
