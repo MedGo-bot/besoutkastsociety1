@@ -84,7 +84,7 @@ export const COLUMNS: Column[] = [
     title: "Legendary Rule",
     description: "The legacy of leadership. Studying the titans of industry and the lessons they leave behind for those who dare to follow.",
     category: "Global Lifestyle",
-    image: "https://images.pexels.com/photo/men-fighting-in-the-ring-5424533/",
+    image: "https://images.canva.link/3lv2z3uc9yaxaam",
     url: "https://besoutkastsociety.substack.com/s/legendary-rule"
   },
   {
