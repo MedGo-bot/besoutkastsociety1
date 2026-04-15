@@ -34,7 +34,7 @@ export const COLUMNS: Column[] = [
     author: "Seth Green",
     description: "A deep dive into the innovations driving the future. From market-shifting tech to the visionary 'Tech Bros' behind them.",
     category: "Exclusive Insights",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.pexels.com/photo/man-with-tattoos-sitting-topless-with-laptop-11873307/",
     url: "https://besoutkastsociety.substack.com/s/the-tactical-advantage-with-seth"
   },
   {
