@@ -67,7 +67,7 @@ export const COLUMNS: Column[] = [
     title: "Edge of the World",
     description: "The ultimate guide for the modern outdoorsman. From precision tools to the philosophy of self-reliance in remote territories.",
     category: "Global Lifestyle",
-    image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.canva.link/p7x3jgghk25a09m",
     url: "https://besoutkastsociety.substack.com/s/edge-of-the-world"
   },
   {
