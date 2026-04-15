@@ -1,18 +1,1 @@
-{
-  "name": "gemini-image-worker",
-  "version": "1.0.0",
-  "description": "Cloudflare Worker for Gemini Image Generation",
-  "main": "index.ts",
-  "scripts": {
-    "build": "tsc",
-    "test": "echo \"No test specified\" && exit 0"
-  },
-  "dependencies": {
-    "@google/genai": "^1.43.0"
-  },
-  "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240320.1",
-    "typescript": "^5.4.2",
-    "wrangler": "^3.101.0"
-  }
-}
+
