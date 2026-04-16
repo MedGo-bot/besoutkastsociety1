@@ -1,65 +1,60 @@
-import { GoogleGenAI } from "@google/genai";
-
-export async function onRequestPost(context: { request: Request; env: { GEMINI_API_KEY: string } }) {
-  try {
-    const { request, env } = context;
-    const body = await request.json();
-    const { prompt } = body;
-    const apiKey = env.GEMINI_API_KEY;
-
-    console.log("Request received for prompt:", prompt);
-    console.log("API Key present:", !!apiKey);
-
-    if (!apiKey) {
-      console.error("GEMINI_API_KEY is missing in env");
-      return new Response(JSON.stringify({ error: "GEMINI_API_KEY is not set in Cloudflare environment variables." }), {
-        status: 500,
-        headers: { "Content-Type": "application/json" },
-      });
-    }
-
-    const ai = new GoogleGenAI({ apiKey });
-    console.log("Generating image for prompt:", prompt);
-    
-    const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash-image',
-      contents: {
-        parts: [{ text: prompt }],
-      },
-      config: {
-        systemInstruction: "You are an image generation model. Generate the requested image based on the prompt. Do not provide any text descriptions or explanations.",
-        maxOutputTokens: 2048,
-        imageConfig: {
-          aspectRatio: "16:9",
-        },
-      },
-    });
-
-    let imageData = null;
-    const candidates = response.candidates;
-    if (candidates && candidates.length > 0 && candidates[0].content?.parts) {
-      for (const part of candidates[0].content.parts) {
-        if (part.inlineData) {
-          imageData = `data:image/png;base64,${part.inlineData.data}`;
-          break;
-        }
-      }
-    }
-
-    if (imageData) {
-      return new Response(JSON.stringify({ imageUrl: imageData }), {
-        headers: { "Content-Type": "application/json" },
-      });
-    } else {
-      return new Response(JSON.stringify({ error: "Failed to generate image data." }), {
-        status: 500,
-        headers: { "Content-Type": "application/json" },
-      });
-    }
-  } catch (error) {
-    return new Response(JSON.stringify({ error: error.message || "Internal server error" }), {
-      status: 500,
-      headers: { "Content-Type": "application/json" },
-    });
-  }
+export interface Env {
+  GEMINI_API_KEY: string;
 }
+
+export default {
+  async fetch(request: Request, env: Env): Promise<Response> {
+    // 1. Handle CORS (Allows your website to talk to this backend)
+    if (request.method === "OPTIONS") {
+      return new Response(null, {
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "POST, OPTIONS",
+          "Access-Control-Allow-Headers": "Content-Type",
+        },
+      });
+    }
+
+    try {
+      // 2. Parse the incoming prompt from your website
+      const { prompt } = await request.json() as { prompt: string };
+      
+      if (!env.GEMINI_API_KEY) {
+        throw new Error("API Key is missing in Cloudflare Dashboard");
+      }
+
+      // 3. Call the Google Generative AI REST API
+      const response = await fetch(
+        "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=" + env.GEMINI_API_KEY,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            contents: [{ parts: [{ text: prompt }] }],
+          }),
+        }
+      );
+
+      // 4. Parse the response
+      const data = await response.json() as any;
+      const text = data.candidates?.[0]?.content?.parts?.[0]?.text || "No response generated";
+
+      // 5. Send the result back to your website
+      return new Response(JSON.stringify({ result: text }), {
+        headers: { 
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*" 
+        },
+      });
+
+    } catch (error: any) {
+      return new Response(JSON.stringify({ error: error.message }), {
+        status: 500,
+        headers: { 
+          "Content-Type": "application/json", 
+          "Access-Control-Allow-Origin": "*" 
+        },
+      });
+    }
+  },
+};
