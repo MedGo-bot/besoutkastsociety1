@@ -1,3 +1,5 @@
+import { GoogleGenAI } from "@google/genai";
+
 export interface Env {
   GEMINI_API_KEY: string;
 }
@@ -20,39 +22,83 @@ export default {
     }
 
     try {
-      const { prompt } = await request.json() as { prompt: string };
-      
-      const response = await fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const { prompt } = (await request.json()) as { prompt: string };
+
+      if (!prompt) {
+        return new Response(JSON.stringify({ error: "Prompt is required" }), {
+          status: 400,
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+          },
+        });
+      }
+
+      if (!env.GEMINI_API_KEY) {
+        return new Response(JSON.stringify({ error: "GEMINI_API_KEY is missing" }), {
+          status: 500,
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+          },
+        });
+      }
+
+      const ai = new GoogleGenAI({ apiKey: env.GEMINI_API_KEY });
+
+      const response = await ai.models.generateContent({
+        model: "gemini-2.5-flash-image",
+        contents: [
+          {
+            parts: [{ text: prompt }],
+          },
+        ],
+        config: {
+          imageConfig: {
+            aspectRatio: "16:9",
+          },
         },
-        body: JSON.stringify({
-          contents: [
-            {
-              parts: [
-                {
-                  text: prompt,
-                },
-              ],
-            },
-          ],
-        }),
       });
 
-      const data = await response.json() as any;
-      const text = data.candidates?.[0]?.content?.parts?.[0]?.text || "No response generated";
+      const candidates = response.candidates ?? [];
+      let imageData: string | undefined;
 
-      return new Response(JSON.stringify({ message: text }), {
-        headers: { 
+      for (const candidate of candidates) {
+        for (const part of candidate.content?.parts ?? []) {
+          const inlineData = (part as any).inlineData;
+          if (inlineData?.data) {
+            imageData = inlineData.data;
+            break;
+          }
+        }
+        if (imageData) break;
+      }
+
+      if (!imageData) {
+        return new Response(JSON.stringify({ error: "Failed to generate image data." }), {
+          status: 500,
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+          },
+        });
+      }
+
+      const imageUrl = `data:image/png;base64,${imageData}`;
+
+      return new Response(JSON.stringify({ imageUrl }), {
+        headers: {
           "Content-Type": "application/json",
-          "Access-Control-Allow-Origin": "*" 
+          "Access-Control-Allow-Origin": "*",
         },
       });
     } catch (error: any) {
       return new Response(JSON.stringify({ error: error.message }), {
         status: 500,
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
       });
     }
   },

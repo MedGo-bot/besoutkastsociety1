@@ -4,6 +4,6 @@ export interface Column {
   author?: string;
   description: string;
   category: string;
-  image: string;
-  url?: string;
+  imageSrc?: string;
+  substackUrl?: string;
 }
